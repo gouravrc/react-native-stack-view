@@ -124,7 +124,8 @@ export default StyleSheet.create({
         height: 80,
         flexDirection: 'column',
         justifyContent: 'flex-start',
-        padding:10
+        padding:10,
+        marginTop:10
     }
 
 });

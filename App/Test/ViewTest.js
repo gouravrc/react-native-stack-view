@@ -124,7 +124,7 @@ export default class Test extends Component {
                 <View style={styles.stackContentDiv}>
                     <View style={styles.inputDiv}>
                     {this.state.name ?
-                        <View style={{width:200,height:10}}>
+                        <View style={{width:200,height:null}}>
                             <Animatable.Text animation={'slideInLeft'} iterationCount={1}>Task name</Animatable.Text>
                         </View>
                         : null
@@ -139,13 +139,13 @@ export default class Test extends Component {
 
                     <View style={styles.inputDiv}>
                     {this.state.details ?
-                        <View style={{width:50,height:10}}>
+                        <View style={{width:50,height:null}}>
                             <Animatable.Text animation={'slideInLeft'} iterationCount={1}>Details</Animatable.Text>
                         </View>
                         : null
                     }
                     <TextInput
-                        style={{fontWeight:'bold', width: '90%', height: 70, color: 'black', fontSize: 20, borderBottomColor: 'grey', borderBottomWidth: 0.8 }}
+                        style={{fontWeight:'bold', width: '95%', height: 70, color: 'black', fontSize: 20, borderBottomColor: 'grey', borderBottomWidth: 0.8 }}
                         placeholder={"Details"}
                         value={this.state.details}
                         onChangeText={(text) => this.setState({ details: text })}
@@ -153,13 +153,13 @@ export default class Test extends Component {
                     </View>
                     <View style={styles.inputDiv}>
                     {this.state.time ?
-                        <View style={{width:200,height:10}}>
+                        <View style={{width:200,height:null}}>
                             <Animatable.Text animation={'slideInLeft'} iterationCount={1}>Time</Animatable.Text>
                         </View>
                         : null
                     }
                     <TextInput
-                        style={{fontWeight:"bold", width: '90%', height: 70, color: 'black', fontSize: 20, borderBottomColor: 'grey', borderBottomWidth: 0.8 }}
+                        style={{fontWeight:"bold", width: '95%', height: 70, color: 'black', fontSize: 20, borderBottomColor: 'grey', borderBottomWidth: 0.8 }}
                         placeholder={"Time"}
                         value={this.state.time}
                         onChangeText={(text) => this.setState({ time: text })}
