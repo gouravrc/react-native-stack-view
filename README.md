@@ -11,7 +11,7 @@ This project was bascially developed from scratch using [Create react native app
 
 [React native animatable](https://www.npmjs.com/package/react-native-animatable) turned out to be a boon for this kind of UI project.
 
-**Checkout my customized [boilerplate](https://github.com/geekygaurav/react-native-redux-saga-garvax) here on github**
+**Checkout my customized react-native [boilerplate](https://github.com/geekygaurav/react-native-redux-saga-garvax) using react-redux redux-sage here on github**
 
 Installation
 ------------
