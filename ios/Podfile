@@ -1,0 +1,63 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'Drawer' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Drawer
+  rn_path = '../node_modules/react-native'
+  pod 'React', path: rn_path, subspecs: [
+    'Core',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTGeolocation',
+    'RCTImage', 
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTPushNotification',
+    'RCTWebSocket',
+    'ART'
+    ]
+
+    pod 'glog', podspec: '../node_modules/react-native/third-party-podspecs/glog.podspec'
+    pod 'yoga', :path => "../node_modules/react-native/ReactCommon/yoga"
+    pod 'Folly', :podspec => "#{rn_path}/third-party-podspecs/Folly.podspec"
+
+  target 'DrawerTests' do
+    # inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'Drawer-tvOS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Drawer-tvOS
+
+  target 'Drawer-tvOSTests' do
+    # inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if target.name == "React"
+      target.remove_from_project
+    end
+    if target.name == 'yoga'
+      target.remove_from_project
+      target.build_configurations.each do |config|
+        config.build_settings['GCC_TREAT_WARNINGS_AS_ERRORS'] = 'NO'
+        config.build_settings['GCC_WARN_64_TO_32_BIT_CONVERSION'] = 'NO'
+      end
+    end
+  end
+end
