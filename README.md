@@ -7,7 +7,7 @@ Hello folks!
 I came across with this beautiful UI designed orginally by Apple for iOS native application such as Reminder app , Maps.
 
 
-This project was bascially developed from scratch using [Create react native app](https://facebook.github.io/react-native/docs/getting-started). 
+This project developed from scratch using [Create react native app](https://facebook.github.io/react-native/docs/getting-started). 
 
 [React native animatable](https://www.npmjs.com/package/react-native-animatable) turned out to be a boon for this kind of UI project.
 
