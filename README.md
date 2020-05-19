@@ -1,4 +1,6 @@
 #  react-native-stack-drawer 
+**Checkout my customized react-native boilerplate** [here](https://github.com/gouravrc/coffee)
+
 <p align="center">
 <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" />
 <img alt="Maintained | Yes" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
@@ -15,7 +17,6 @@ This project developed from scratch using [Create react native app](https://face
 
 [React native animatable](https://www.npmjs.com/package/react-native-animatable) turned out to be a boon for this kind of UI project.
 
-**Checkout my customized react-native [boilerplate](https://github.com/gouravrc/coffee) **
 
 Installation
 ------------
